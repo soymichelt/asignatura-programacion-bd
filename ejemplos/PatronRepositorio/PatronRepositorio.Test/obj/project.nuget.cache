@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "ybE6Huv20RsGRGsg1giKYJdHC1ICTW/f+3n9/1TZyIsPrRZUrJ7Aw6xbuICbUXMkhGzsTNsgz0oA0nz3bGpOJg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\ejemplos\\PatronRepositorio\\PatronRepositorio.Test\\PatronRepositorio.Test.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\soymichel\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
+    "C:\\Users\\soymichel\\.nuget\\packages\\microsoft.net.test.sdk\\16.5.0\\microsoft.net.test.sdk.16.5.0.nupkg.sha512",
+    "C:\\Users\\soymichel\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
+    "C:\\Users\\soymichel\\.nuget\\packages\\nunit3testadapter\\3.16.1\\nunit3testadapter.3.16.1.nupkg.sha512"
+  ],
+  "logs": []
+}
