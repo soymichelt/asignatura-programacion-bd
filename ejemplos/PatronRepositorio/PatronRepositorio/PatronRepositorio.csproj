@@ -44,12 +44,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entidades\Persona.cs" />
+    <Compile Include="Entidades\Producto.cs" />
+    <Compile Include="Entidades\Venta.cs" />
+    <Compile Include="Entidades\VentaDetalle.cs" />
     <Compile Include="Helpers\SqlServerHelper.cs" />
     <Compile Include="Operaciones.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositorios\IAgregar.cs" />
+    <Compile Include="Repositorios\IEditar.cs" />
+    <Compile Include="Repositorios\IEliminar.cs" />
+    <Compile Include="Repositorios\IListar.cs" />
     <Compile Include="Repositorios\IRepositorio.cs" />
-    <Compile Include="Repositorios\RepositorioSQLServerPersona.cs" />
+    <Compile Include="Repositorios\PersonaRepositorioSQLServer.cs" />
+    <Compile Include="Repositorios\ProductoRepositorioSQLServer.cs" />
+    <Compile Include="Repositorios\VentaRepositorioSQLServer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

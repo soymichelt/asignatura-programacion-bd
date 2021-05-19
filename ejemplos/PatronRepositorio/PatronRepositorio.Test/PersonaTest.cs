@@ -14,7 +14,7 @@ namespace PatronRepositorio.Test
         [Test]
         public void AgregarTest()
         {
-            RepositorioSQLServerPersona repoPersona = new RepositorioSQLServerPersona();
+            PersonaRepositorioSQLServer repoPersona = new PersonaRepositorioSQLServer();
             Persona persona = repoPersona.Agregar(new Persona() {
                 nombres = "Michel",
                 apellidos = "Trana",
@@ -28,7 +28,7 @@ namespace PatronRepositorio.Test
         [Test]
         public void ValidarDatosTest()
         {
-            RepositorioSQLServerPersona repoPersona = new RepositorioSQLServerPersona();
+            PersonaRepositorioSQLServer repoPersona = new PersonaRepositorioSQLServer();
             Persona persona = new Persona()
             {
                 nombres = "Michel",

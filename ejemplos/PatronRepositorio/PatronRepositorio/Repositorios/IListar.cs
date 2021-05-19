@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace PatronRepositorio.Repositorios {
-	interface IRepositorio<Entidad, TipoEntidadId> : IAgregar<Entidad>, IEditar<Entidad>, IEliminar<TipoEntidadId>, IListar<Entidad, TipoEntidadId> {
+	public interface IListar<Entidad, TipoEntidadId> {
+		Entidad Seleccionar(TipoEntidadId entidadId);
+
+		List<Entidad> Listar();
 	}
 }

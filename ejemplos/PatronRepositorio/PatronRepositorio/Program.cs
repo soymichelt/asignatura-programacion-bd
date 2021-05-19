@@ -14,7 +14,7 @@ namespace PatronRepositorio
         static void Main(string[] args)
         {
 
-            RepositorioSQLServerPersona personas = new RepositorioSQLServerPersona();
+            PersonaRepositorioSQLServer personas = new PersonaRepositorioSQLServer();
             personas.Agregar(new Persona() {
                 nombres = "Jose",
                 apellidos = "Perez",
@@ -37,7 +37,7 @@ namespace PatronRepositorio
 
             Console.WriteLine("LISTADO DE PERSONAS");
             Console.WriteLine("--------------------------------------------------------------");
-            personas.Listado().ForEach(c => {
+            personas.Listar().ForEach(c => {
                 Console.WriteLine($"{c.nombres}\t{c.apellidos}\t{c.genero}\t{c.fechaNacimiento}");
             });
 
