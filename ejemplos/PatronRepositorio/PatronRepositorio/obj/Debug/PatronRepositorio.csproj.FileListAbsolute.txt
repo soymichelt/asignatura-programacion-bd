@@ -4,3 +4,4 @@ C:\Users\soymichel\Documents\GitHub\asignatura-programacion-bd\ejemplos\PatronRe
 C:\Users\soymichel\Documents\GitHub\asignatura-programacion-bd\ejemplos\PatronRepositorio\PatronRepositorio\bin\Debug\PatronRepositorio.pdb
 C:\Users\soymichel\Documents\GitHub\asignatura-programacion-bd\ejemplos\PatronRepositorio\PatronRepositorio\obj\Debug\PatronRepositorio.exe
 C:\Users\soymichel\Documents\GitHub\asignatura-programacion-bd\ejemplos\PatronRepositorio\PatronRepositorio\obj\Debug\PatronRepositorio.pdb
+C:\Users\soymichel\Documents\GitHub\asignatura-programacion-bd\ejemplos\PatronRepositorio\PatronRepositorio\obj\Debug\PatronRepositorio.csprojAssemblyReference.cache

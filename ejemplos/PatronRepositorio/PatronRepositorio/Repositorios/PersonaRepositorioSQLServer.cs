@@ -32,11 +32,14 @@ namespace PatronRepositorio.Repositorios
             ValidarDatos(entidad);
 
             sqlCmd = new SqlCommand($"Insert Into personas (personaId, nombres, apellidos, genero, fechaNacimiento) " +
-                $"values ('{entidad.PersonaId.ToString()}', '{entidad.nombres}', '{entidad.apellidos}', '{entidad.genero}', '{entidad.fechaNacimiento}')");
+                $"values (@personaId, @nombres, '{entidad.apellidos}', '{entidad.genero}', '{entidad.fechaNacimiento}')");
+            sqlCmd.Parameters.AddWithValue("@personaId", entidad.PersonaId);
+            sqlCmd.Parameters.AddWithValue("@nombres", entidad.nombres);
             SqlConnection cnn = SqlServerHelper.Connection();
             sqlCmd.Connection = cnn;
             cnn.Open();
             sqlCmd.ExecuteNonQuery();
+            sqlCmd.Parameters.Clear();
             return entidad;
         }
 
@@ -60,6 +63,36 @@ namespace PatronRepositorio.Repositorios
             sqlCmd.Connection = cnn;
             cnn.Open();
             sqlCmd.ExecuteNonQuery();
+        }
+
+        public void Agregar3Personas() {
+            sqlCmd = new SqlCommand();
+            SqlConnection cnn = SqlServerHelper.Connection();
+            cnn.Open();
+            SqlTransaction transaction = cnn.BeginTransaction();
+
+            sqlCmd.Connection = cnn;
+            try {
+                sqlCmd.CommandText = "INSERT INTO personas (personaId, nombres, apellidos, genero, fechaNacimiento) VALUES (@personaId, @nombres, @apellidos, @genero, @fecha)";
+                sqlCmd.Parameters.AddWithValue("@personaId", Guid.NewGuid());
+                sqlCmd.Parameters.AddWithValue("@nombres", "Renard");
+                sqlCmd.Parameters.AddWithValue("@apellidos", "Gomez");
+                sqlCmd.Parameters.AddWithValue("@genero", "M");
+                sqlCmd.Parameters.AddWithValue("@fecha", "1998/11/03");
+                sqlCmd.ExecuteNonQuery();
+                sqlCmd.ExecuteNonQuery();
+                sqlCmd.ExecuteNonQuery();
+                sqlCmd.ExecuteNonQuery();
+                sqlCmd.ExecuteNonQuery();
+                sqlCmd.ExecuteNonQuery();
+                sqlCmd.ExecuteNonQuery();
+
+                transaction.Commit();
+            } catch (Exception ex) {
+                transaction.Rollback();
+                throw new Exception(ex.Message);
+            }
+            
         }
 
         public List<Persona> Listar()
