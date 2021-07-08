@@ -5708,11 +5708,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\soymichel\\Documents\\GitHub\\biblioteca\\biblioteca\\biblioteca.csproj",
+      "projectUniqueName": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\ejemplos\\biblioteca\\biblioteca\\biblioteca.csproj",
       "projectName": "biblioteca",
-      "projectPath": "C:\\Users\\soymichel\\Documents\\GitHub\\biblioteca\\biblioteca\\biblioteca.csproj",
+      "projectPath": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\ejemplos\\biblioteca\\biblioteca\\biblioteca.csproj",
       "packagesPath": "C:\\Users\\soymichel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\soymichel\\Documents\\GitHub\\biblioteca\\biblioteca\\obj\\",
+      "outputPath": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\ejemplos\\biblioteca\\biblioteca\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\soymichel\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HjRoTRE+aEevMa8mO3zyycZdjAKXucHX6BwsSZ44X3prdZw+GMPOjStm/BAlwh7VIYVIf9dsC/SvHOz3jpjBjQ==",
+  "dgSpecHash": "NdMAJIslmFhJUqW7mR6jU7IG3Fqns6LMc3jEF+9+vaSh6IiIwAuK6dmve2PSG0A24ZpZ/1wFbjcGpxX15wfUrA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\soymichel\\Documents\\GitHub\\biblioteca\\biblioteca\\biblioteca.csproj",
+  "projectFilePath": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\ejemplos\\biblioteca\\biblioteca\\biblioteca.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\soymichel\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\soymichel\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
