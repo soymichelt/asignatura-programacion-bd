@@ -19,7 +19,9 @@ namespace AppVenta.Aplicaciones.Servicios {
 
 		public Producto Agregar(Producto entidad) {
 			if (entidad != null) {
-				return repositorio.Agregar(entidad);
+				var resultado = repositorio.Agregar(entidad);
+				repositorio.GuardarTodosLosCambios();
+				return resultado;
 			} else
 				throw new Exception("Error la entidad no puede ser nula");
 		}
@@ -30,10 +32,12 @@ namespace AppVenta.Aplicaciones.Servicios {
 
 		public void Editar(Producto entidad) {
 			repositorio.Editar(entidad);
+			repositorio.GuardarTodosLosCambios();
 		}
 
 		public void Eliminar(Guid entidadId) {
 			repositorio.Eliminar(entidadId);
+			repositorio.GuardarTodosLosCambios();
 		}
 
 		public Producto SeleccionarPorID(Guid entidadId) {

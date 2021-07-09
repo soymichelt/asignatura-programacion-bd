@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using AppVenta.Dominio;
 using AppVenta.Infraestructura.Datos.Repositorios;
 using AppVenta.Aplicaciones.Servicios;
+using AppVenta.Infraestructura.Datos.Contextos;
+
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -14,11 +16,22 @@ namespace AppVenta.Infraestructura.API.Controllers {
 	[Route("api/[controller]")]
 	[ApiController]
 	public class VentaController : ControllerBase {
+
+		public VentaServicio CrearServicio() {
+			VentaContexto db = new VentaContexto();
+			VentaRepositorio repositorio = new VentaRepositorio(db);
+			ProductoRepositorio repositorioProducto = new ProductoRepositorio(db);
+			VentaDetalleRepositorio repositorioDetalle = new VentaDetalleRepositorio(db);
+
+			VentaServicio servicio = new VentaServicio(repositorio, repositorioDetalle, repositorioProducto);
+
+			return servicio;
+		}
+
 		// GET: api/<VentaController>
 		[HttpGet]
 		public ActionResult<IEnumerable<Venta>> Get() {
-			VentaRepositorio repositorio = new VentaRepositorio();
-			VentaServicio servicio = new VentaServicio(repositorio);
+			VentaServicio servicio = CrearServicio();
 
 			return Ok(servicio.Listar());
 		}
@@ -26,8 +39,7 @@ namespace AppVenta.Infraestructura.API.Controllers {
 		// GET api/<VentaController>/5
 		[HttpGet("{id}")]
 		public ActionResult<Venta> Get(Guid id) {
-			VentaRepositorio repositorio = new VentaRepositorio();
-			VentaServicio servicio = new VentaServicio(repositorio);
+			VentaServicio servicio = CrearServicio();
 
 			return Ok(servicio.SeleccionarPorID(id));
 		}
@@ -35,8 +47,7 @@ namespace AppVenta.Infraestructura.API.Controllers {
 		// POST api/<VentaController>
 		[HttpPost]
 		public ActionResult<Venta> Post([FromBody] Venta venta) {
-			VentaRepositorio repositorio = new VentaRepositorio();
-			VentaServicio servicio = new VentaServicio(repositorio);
+			VentaServicio servicio = CrearServicio();
 
 			var resultado = servicio.Agregar(venta);
 
@@ -45,8 +56,7 @@ namespace AppVenta.Infraestructura.API.Controllers {
 				numeroVenta = resultado.numeroVenta,
 				fecha = resultado.fecha,
 				concepto = resultado.concepto,
-				subtotal = resultado.total,
-				descuento = resultado.descuento,
+				subtotal = resultado.subtotal,
 				impuesto = resultado.impuesto,
 				total = resultado.total,
 				anulado = resultado.anulado,
@@ -56,8 +66,7 @@ namespace AppVenta.Infraestructura.API.Controllers {
 		// DELETE api/<VentaController>/5
 		[HttpDelete("{id}")]
 		public ActionResult Delete(Guid id) {
-			VentaRepositorio repositorio = new VentaRepositorio();
-			VentaServicio servicio = new VentaServicio(repositorio);
+			VentaServicio servicio = CrearServicio();
 
 			servicio.Anular(id);
 

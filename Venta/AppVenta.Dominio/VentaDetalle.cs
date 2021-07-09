@@ -18,8 +18,6 @@ namespace AppVenta.Dominio {
 
 		public decimal subtotal { get; set; }
 
-		public decimal descuento { get; set; }
-
 		public decimal impuesto { get; set; }
 
 		public decimal total { get; set; }

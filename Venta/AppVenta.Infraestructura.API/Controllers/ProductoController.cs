@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using AppVenta.Dominio;
 using AppVenta.Infraestructura.Datos.Repositorios;
 using AppVenta.Aplicaciones.Servicios;
+using AppVenta.Infraestructura.Datos.Contextos;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -15,11 +16,18 @@ namespace AppVenta.Infraestructura.API.Controllers {
 	[ApiController]
 	public class ProductoController : ControllerBase {
 
+		public ProductoServicio CrearServicio() {
+			VentaContexto db = new VentaContexto();
+			ProductoRepositorio repositorio = new ProductoRepositorio(db);
+			ProductoServicio servicio = new ProductoServicio(repositorio);
+
+			return servicio;
+		}
+
 		// GET: api/<ProductoController>
 		[HttpGet]
 		public ActionResult<IEnumerable<Producto>> Get() {
-			ProductoRepositorio repositorio = new ProductoRepositorio();
-			ProductoServicio servicio = new ProductoServicio(repositorio);
+			ProductoServicio servicio = CrearServicio();
 
 			return Ok(servicio.Listar());
 		}
@@ -27,8 +35,7 @@ namespace AppVenta.Infraestructura.API.Controllers {
 		// GET api/<ProductoController>/5
 		[HttpGet("{id}")]
 		public ActionResult<Producto> Get(Guid id) {
-			ProductoRepositorio repositorio = new ProductoRepositorio();
-			ProductoServicio servicio = new ProductoServicio(repositorio);
+			ProductoServicio servicio = CrearServicio();
 
 			return Ok(servicio.SeleccionarPorID(id));
 		}
@@ -36,8 +43,7 @@ namespace AppVenta.Infraestructura.API.Controllers {
 		// POST api/<ProductoController>
 		[HttpPost]
 		public ActionResult<Producto> Post([FromBody] Producto producto) {
-			ProductoRepositorio repositorio = new ProductoRepositorio();
-			ProductoServicio servicio = new ProductoServicio(repositorio);
+			ProductoServicio servicio = CrearServicio();
 
 			var resultado = servicio.Agregar(producto);
 
@@ -47,8 +53,7 @@ namespace AppVenta.Infraestructura.API.Controllers {
 		// PUT api/<ProductoController>/5
 		[HttpPut("{id}")]
 		public ActionResult Put(Guid id, [FromBody] Producto producto) {
-			ProductoRepositorio repositorio = new ProductoRepositorio();
-			ProductoServicio servicio = new ProductoServicio(repositorio);
+			ProductoServicio servicio = CrearServicio();
 
 			producto.productoId = id;
 
@@ -60,8 +65,7 @@ namespace AppVenta.Infraestructura.API.Controllers {
 		// DELETE api/<ProductoController>/5
 		[HttpDelete("{id}")]
 		public ActionResult Delete(Guid id) {
-			ProductoRepositorio repositorio = new ProductoRepositorio();
-			ProductoServicio servicio = new ProductoServicio(repositorio);
+			ProductoServicio servicio = CrearServicio();
 
 			servicio.Eliminar(id);
 

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gjtpkNPX9UacMpk+0KreiOXJfK/NqNkD5SzCANBGu9gUg0anUHAXDmrv9N8bjzw13E5ShHpQQQc0JRS0+csdrQ==",
+  "dgSpecHash": "5LgswuNkiuu2E8zxcB0roasw2yqktoZT+OoAKJtLcfYvUFnnnS1PZCl71P4rqhB0DqNftGFI8nL4XkkPUuTaJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Aplicaciones\\AppVenta.Aplicaciones.csproj",
+  "projectFilePath": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Aplicaciones\\AppVenta.Aplicaciones.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\soymichel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.15\\microsoft.netcore.app.host.win-x64.3.1.15.nupkg.sha512"
   ],

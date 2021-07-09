@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Infraestructura.Datos\\AppVenta.Infraestructura.Datos.csproj": {}
+    "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Infraestructura.Datos\\AppVenta.Infraestructura.Datos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Dominio\\AppVenta.Dominio.csproj": {
+    "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Dominio\\AppVenta.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Dominio\\AppVenta.Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Dominio\\AppVenta.Dominio.csproj",
         "projectName": "AppVenta.Dominio",
-        "projectPath": "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Dominio\\AppVenta.Dominio.csproj",
+        "projectPath": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Dominio\\AppVenta.Dominio.csproj",
         "packagesPath": "C:\\Users\\soymichel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Dominio\\obj\\",
+        "outputPath": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\soymichel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Infraestructura.Datos\\AppVenta.Infraestructura.Datos.csproj": {
+    "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Infraestructura.Datos\\AppVenta.Infraestructura.Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Infraestructura.Datos\\AppVenta.Infraestructura.Datos.csproj",
+        "projectUniqueName": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Infraestructura.Datos\\AppVenta.Infraestructura.Datos.csproj",
         "projectName": "AppVenta.Infraestructura.Datos",
-        "projectPath": "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Infraestructura.Datos\\AppVenta.Infraestructura.Datos.csproj",
+        "projectPath": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Infraestructura.Datos\\AppVenta.Infraestructura.Datos.csproj",
         "packagesPath": "C:\\Users\\soymichel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Infraestructura.Datos\\obj\\",
+        "outputPath": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Infraestructura.Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\soymichel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -90,8 +90,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Dominio\\AppVenta.Dominio.csproj": {
-                "projectPath": "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Dominio\\AppVenta.Dominio.csproj"
+              "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Dominio\\AppVenta.Dominio.csproj": {
+                "projectPath": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Dominio\\AppVenta.Dominio.csproj"
               }
             }
           }

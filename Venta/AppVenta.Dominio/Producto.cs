@@ -12,6 +12,8 @@ namespace AppVenta.Dominio {
 
 		public string descripcion { get; set; }
 
+		public decimal costo { get; set; }
+
 		public decimal precio { get; set; }
 
 		public decimal cantidadEnStock { get; set; }

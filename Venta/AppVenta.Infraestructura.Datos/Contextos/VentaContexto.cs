@@ -8,7 +8,7 @@ using AppVenta.Infraestructura.Datos.Entidades;
 using AppVenta.Infraestructura.Datos.Helpers;
 
 namespace AppVenta.Infraestructura.Datos.Contextos {
-	class VentaContexto : DbContext {
+	public class VentaContexto : DbContext {
 
 		public DbSet<Producto> Productos { get; set; }
 

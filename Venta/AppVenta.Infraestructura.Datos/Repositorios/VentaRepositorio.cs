@@ -9,50 +9,42 @@ using AppVenta.Infraestructura.Datos.Contextos;
 
 namespace AppVenta.Infraestructura.Datos.Repositorios {
 	public class VentaRepositorio : IRepositorioMovimiento<Venta, Guid> {
+
+		private VentaContexto db;
+
+		public VentaRepositorio(VentaContexto _db) {
+			db = _db;
+		}
+
 		public Venta Agregar(Venta entidad) {
-			using (VentaContexto db = new VentaContexto()) {
-				entidad.ventaId = Guid.NewGuid();
-				db.Ventas.Add(entidad);
-				
-				entidad.VentasDetalles.ForEach(detalle => {
-					detalle.ventaId = entidad.ventaId;
-					db.VentaDetalles.Add(detalle);
-				});
-
-				db.SaveChanges();
-
-				return entidad;
-			}
+			entidad.ventaId = Guid.NewGuid();
+			db.Ventas.Add(entidad);
+			return entidad;
 		}
 
 		public void Anular(Guid entidadId) {
-			using (VentaContexto db = new VentaContexto()) {
-				var ventaSeleccionada = db.Ventas.Where(c => c.ventaId == entidadId && !c.anulado).FirstOrDefault();
+			var ventaSeleccionada = SeleccionarPorID(entidadId);
 
-				if (ventaSeleccionada != null) {
-					ventaSeleccionada.anulado = true;
+			if (ventaSeleccionada != null) {
+				ventaSeleccionada.anulado = true;
 
-					db.Entry(ventaSeleccionada).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
-					db.SaveChanges();
-				} else {
-					throw new NullReferenceException("No se ha encontrado la venta que intenta anular... 😣");
-				}
+				db.Entry(ventaSeleccionada).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+			} else {
+				throw new NullReferenceException("No se ha encontrado la venta que intenta anular... 😣");
 			}
+		}
+
+		public void GuardarTodosLosCambios() {
+			db.SaveChanges();
 		}
 
 		public List<Venta> Listar() {
-			using (VentaContexto db = new VentaContexto()) {
-				return db.Ventas.ToList();
-			}
+			return db.Ventas.ToList();
 		}
 
 		public Venta SeleccionarPorID(Guid entidadId) {
-			using (VentaContexto db = new VentaContexto()) {
-				var ventaSeleccionada = db.Ventas.Where(c => c.ventaId == entidadId && !c.anulado).FirstOrDefault();
-				ventaSeleccionada.anulado = true;
-
-				return ventaSeleccionada;
-			}
+			var ventaSeleccionada = db.Ventas.Where(c => c.ventaId == entidadId && !c.anulado).FirstOrDefault();
+			return ventaSeleccionada;
 		}
 	}
 }

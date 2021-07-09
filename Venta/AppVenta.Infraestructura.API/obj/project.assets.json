@@ -5761,11 +5761,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Infraestructura.API\\AppVenta.Infraestructura.API.csproj",
+      "projectUniqueName": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Infraestructura.API\\AppVenta.Infraestructura.API.csproj",
       "projectName": "AppVenta.Infraestructura.API",
-      "projectPath": "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Infraestructura.API\\AppVenta.Infraestructura.API.csproj",
+      "projectPath": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Infraestructura.API\\AppVenta.Infraestructura.API.csproj",
       "packagesPath": "C:\\Users\\soymichel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Infraestructura.API\\obj\\",
+      "outputPath": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Infraestructura.API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\soymichel\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5783,11 +5783,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Aplicaciones\\AppVenta.Aplicaciones.csproj": {
-              "projectPath": "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Aplicaciones\\AppVenta.Aplicaciones.csproj"
+            "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Aplicaciones\\AppVenta.Aplicaciones.csproj": {
+              "projectPath": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Aplicaciones\\AppVenta.Aplicaciones.csproj"
             },
-            "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Infraestructura.Datos\\AppVenta.Infraestructura.Datos.csproj": {
-              "projectPath": "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Infraestructura.Datos\\AppVenta.Infraestructura.Datos.csproj"
+            "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Infraestructura.Datos\\AppVenta.Infraestructura.Datos.csproj": {
+              "projectPath": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Infraestructura.Datos\\AppVenta.Infraestructura.Datos.csproj"
             }
           }
         }

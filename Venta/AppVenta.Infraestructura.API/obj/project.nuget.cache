@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r+PlgBpEeoFf/vHyjl/pbidClbhLztPRPVmALk/pXRXb7VuS12205hwfNA2+rUtj9pACUp2ewagw+2+AXcu16g==",
+  "dgSpecHash": "nXzm0n/HdgxHZ1Ro0QWp/xyeaAOsOlEDDEUHTXekEPfIcofzHb50xIg5/py7Gltl4W86ZL4uufxtrerY6/k/ww==",
   "success": true,
-  "projectFilePath": "C:\\Users\\soymichel\\Documents\\GitHub\\Venta\\AppVenta.Infraestructura.API\\AppVenta.Infraestructura.API.csproj",
+  "projectFilePath": "C:\\Users\\soymichel\\Documents\\GitHub\\asignatura-programacion-bd\\Venta\\AppVenta.Infraestructura.API\\AppVenta.Infraestructura.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\soymichel\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\soymichel\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",
