@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WOt+LIgE/Jn2GPoM5cuJdYFtxmIy1sV6NBWGTUys0ZtRochqv4sN43Go4uBAfogigcBKTzzZ9QyQDr1lnqqjIg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\soymichel\\source\\repos\\AppRRHH.Dominio\\AppRRHH.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\soymichel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.15\\microsoft.netcore.app.host.win-x64.3.1.15.nupkg.sha512"
+  ],
+  "logs": []
+}

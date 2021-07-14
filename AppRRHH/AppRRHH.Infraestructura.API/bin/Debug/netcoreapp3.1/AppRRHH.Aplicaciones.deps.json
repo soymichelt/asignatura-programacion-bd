@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "AppRRHH.Aplicaciones/1.0.0": {
+        "dependencies": {
+          "AppRRHH.Dominio": "1.0.0"
+        },
+        "runtime": {
+          "AppRRHH.Aplicaciones.dll": {}
+        }
+      },
+      "AppRRHH.Dominio/1.0.0": {
+        "runtime": {
+          "AppRRHH.Dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AppRRHH.Aplicaciones/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AppRRHH.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

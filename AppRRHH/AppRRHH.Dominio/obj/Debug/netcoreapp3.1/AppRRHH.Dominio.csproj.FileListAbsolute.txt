@@ -1,0 +1,12 @@
+C:\Users\soymichel\source\repos\AppRRHH.Dominio\bin\Debug\netcoreapp3.1\AppRRHH.Dominio.exe
+C:\Users\soymichel\source\repos\AppRRHH.Dominio\bin\Debug\netcoreapp3.1\AppRRHH.Dominio.deps.json
+C:\Users\soymichel\source\repos\AppRRHH.Dominio\bin\Debug\netcoreapp3.1\AppRRHH.Dominio.runtimeconfig.json
+C:\Users\soymichel\source\repos\AppRRHH.Dominio\bin\Debug\netcoreapp3.1\AppRRHH.Dominio.runtimeconfig.dev.json
+C:\Users\soymichel\source\repos\AppRRHH.Dominio\bin\Debug\netcoreapp3.1\AppRRHH.Dominio.dll
+C:\Users\soymichel\source\repos\AppRRHH.Dominio\bin\Debug\netcoreapp3.1\AppRRHH.Dominio.pdb
+C:\Users\soymichel\source\repos\AppRRHH.Dominio\obj\Debug\netcoreapp3.1\AppRRHH.Dominio.AssemblyInfoInputs.cache
+C:\Users\soymichel\source\repos\AppRRHH.Dominio\obj\Debug\netcoreapp3.1\AppRRHH.Dominio.AssemblyInfo.cs
+C:\Users\soymichel\source\repos\AppRRHH.Dominio\obj\Debug\netcoreapp3.1\AppRRHH.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\soymichel\source\repos\AppRRHH.Dominio\obj\Debug\netcoreapp3.1\AppRRHH.Dominio.dll
+C:\Users\soymichel\source\repos\AppRRHH.Dominio\obj\Debug\netcoreapp3.1\AppRRHH.Dominio.pdb
+C:\Users\soymichel\source\repos\AppRRHH.Dominio\obj\Debug\netcoreapp3.1\AppRRHH.Dominio.genruntimeconfig.cache

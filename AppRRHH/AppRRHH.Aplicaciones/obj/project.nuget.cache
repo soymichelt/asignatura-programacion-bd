@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mmKYP6yZbwMhUGPuJ62X5YVUrEyRv5+YAgZFvPiIZ+jycsBO0DuQVXtEQD+UDa3nAB75tlIKm8g+kCFe6Cmm7A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\soymichel\\source\\repos\\AppRRHH.Aplicaciones\\AppRRHH.Aplicaciones.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\soymichel\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.15\\microsoft.netcore.app.host.win-x64.3.1.15.nupkg.sha512"
+  ],
+  "logs": []
+}
